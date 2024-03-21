@@ -1,0 +1,28 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 6dvh;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.6px);
+  -webkit-backdrop-filter: blur(0.6px);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container ul {
+  width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.8vw;
+  font-weight: 300;
+}
+.container ul a {
+  transition: all 0.3s ease-in-out;
+}
+.container ul a:hover {
+  font-weight: 700;
+}
