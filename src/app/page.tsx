@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        {posts.map((post: Tpost) => (
+        {posts.map((post: TPost) => (
           <Post key={post.slug} {...post} />
         ))}
       </div>

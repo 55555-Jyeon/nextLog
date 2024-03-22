@@ -1,4 +1,28 @@
 .main {
+  width: 100vw;
+  min-height: 100dvh;
+  overflow-y: visible;
+  padding-top: 6dvh;
 }
-.container {
+.post {
+  padding: 2vw;
+}
+.post h1 {
+  margin: 3vw 0 1vw;
+  padding-bottom: 0.6vw;
+  padding-left: 10vw;
+  border-bottom: 1px solid #ccc;
+}
+.post img {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 2vw 0 4vw;
+}
+.post p {
+  width: 80vw;
+  margin: 0 10vw;
+  word-break: keep-all;
+  font-weight: 300;
+  line-height: 150%;
 }

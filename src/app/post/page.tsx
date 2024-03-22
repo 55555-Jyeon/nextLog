@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./post.module.css";
 import Image from "next/image";
 
-export default function Post({ title, summary, image, slug, date }: Tpost) {
+export default function Post({ title, summary, image, slug, date }: TPost) {
   return (
     <main className={styles.main}>
       <Link href={`/post/${slug}`}>

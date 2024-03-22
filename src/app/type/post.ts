@@ -1,4 +1,4 @@
-type Tpost = {
+type TPost = {
   title: string;
   slug: string;
   date: string;
