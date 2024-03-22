@@ -1,9 +1,16 @@
 .main {
   position: relative;
+  top: 0px;
   width: 30vw;
   height: 48vh;
   background-color: #ffffff8a;
   border-radius: 1vw;
+  transition: all 0.3s ease-in-out;
+}
+.main:hover {
+  top: -20px;
+  background-color: #fff;
+  cursor: pointer;
 }
 .post {
   display: flex;
