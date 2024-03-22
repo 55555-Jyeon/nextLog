@@ -5,12 +5,13 @@
   width: 100dvw;
   height: 6dvh;
   background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(0.6px);
-  -webkit-backdrop-filter: blur(0.6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 100;
 }
 .container ul {
   width: 20vw;

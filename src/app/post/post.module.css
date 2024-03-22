@@ -6,6 +6,7 @@
   background-color: #ffffff8a;
   border-radius: 1vw;
   transition: all 0.3s ease-in-out;
+  margin: 2vw 0;
 }
 .main:hover {
   top: -20px;
@@ -25,11 +26,18 @@
   font-weight: 600;
 }
 .imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 28vw;
   height: 25vh;
   overflow: hidden;
   margin: 1vw 0;
   border-radius: 0.6vw;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
 }
 .post h5 {
   font-weight: 300;

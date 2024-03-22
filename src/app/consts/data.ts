@@ -1,4 +1,4 @@
-export const posts: Tpost[] = [
+export const posts: TPost[] = [
   {
     title: "My First Post!",
     slug: "first",

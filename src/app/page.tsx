@@ -1,12 +1,14 @@
-import { posts } from "./consts/data";
+import { getAllPosts } from "@/utils/data";
 import styles from "./page.module.css";
 import Post from "./post/page";
 
 export default function Home() {
+  const allPosts = getAllPosts();
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        {posts.map((post: TPost) => (
+        {allPosts.map((post: TPost) => (
           <Post key={post.slug} {...post} />
         ))}
       </div>

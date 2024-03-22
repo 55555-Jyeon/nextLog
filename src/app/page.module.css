@@ -1,12 +1,20 @@
 .main {
-  width: 100dvw;
-  min-height: 100dvh;
+  position: relative;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: visible;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
+  gap: 1vw;
+  padding: 4vw 0;
 }
+
 .container {
-  width: 100dvw;
-  min-height: 100dvh;
+  width: 100%;
   padding: 6vh 3vw 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }

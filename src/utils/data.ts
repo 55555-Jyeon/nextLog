@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
+// posts directory 가져오기("posts" 디렉토리의 경로)
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {
