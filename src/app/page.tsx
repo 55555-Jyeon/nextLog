@@ -1,6 +1,6 @@
 import { posts } from "./consts/data";
 import styles from "./page.module.css";
-import Post from "./post/[slug]/page";
+import Post from "./post/page";
 
 export default function Home() {
   return (

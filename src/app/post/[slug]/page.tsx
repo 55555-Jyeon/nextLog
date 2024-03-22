@@ -1,13 +1,32 @@
-import styles from "./post.module.css";
+import { getAllPosts, getPostBySlug } from "@/utils/data";
+import styles from "./detail.module.css";
+import { notFound } from "next/navigation";
 
-export default function Post({ title, content, slug, date }: Tpost) {
+type Tparams = {
+  params: {
+    slug: string;
+  };
+};
+
+export default function DetailPost({ params }: Tparams) {
+  const post = getPostBySlug(params.slug);
+
+  if (!post) {
+    return notFound();
+  }
+
   return (
     <main className={styles.main}>
-      <div key={slug}>
-        <h1>{title}</h1>
-        <p>{date}</p>
-        <p>{content}</p>
-      </div>
+      <h1>{post.title}</h1>
+      <p>{post.date}</p>
+      <p>{post.content}</p>
     </main>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
