@@ -6,17 +6,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <div>
-          {posts.map((post: Tpost) => (
-            <Post
-              key={post.slug}
-              title={post.title}
-              content={post.content}
-              slug={post.slug}
-              date={post.date}
-            />
-          ))}
-        </div>
+        {posts.map((post: Tpost) => (
+          <Post key={post.slug} {...post} />
+        ))}
       </div>
     </main>
   );

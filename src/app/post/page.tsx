@@ -1,14 +1,18 @@
 import Link from "next/link";
 import styles from "./post.module.css";
+import Image from "next/image";
 
-export default function Post({ title, content, slug, date }: Tpost) {
+export default function Post({ title, summary, image, slug, date }: Tpost) {
   return (
     <main className={styles.main}>
       <Link href={`/post/${slug}`}>
-        <div key={slug}>
+        <div className={styles.post} key={slug}>
           <h1>{title}</h1>
-          <p>{date}</p>
-          <p>{content}</p>
+          <div className={styles.imageContainer}>
+            <Image width={360} height={200} src={image} alt="post image" />
+          </div>
+          <h5>{summary}</h5>
+          <h6>{date}</h6>
         </div>
       </Link>
     </main>

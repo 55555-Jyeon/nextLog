@@ -1,14 +1,12 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100dvw;
   min-height: 100dvh;
 }
 .container {
   width: 100dvw;
   min-height: 100dvh;
-  margin-top: 6dvh;
-  padding: 3vw;
+  padding: 6vh 3vw 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
