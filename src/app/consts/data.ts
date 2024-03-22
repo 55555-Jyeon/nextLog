@@ -1,3 +1,4 @@
+/* sample post */
 export const posts: TPost[] = [
   {
     title: "My First Post!",
