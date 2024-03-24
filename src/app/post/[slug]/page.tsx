@@ -4,6 +4,12 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { TParams } from "@/type/props";
 
+export async function generateMetadata({ params }: TParams) {
+  return {
+    title: `post | ${params.slug}`,
+  };
+}
+
 export default function DetailPost({ params }: TParams) {
   const post = getPostBySlug(params.slug);
   if (!post) return notFound();
