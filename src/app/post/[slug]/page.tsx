@@ -2,7 +2,7 @@ import { getAllPosts, getPostBySlug } from "@/utils/data";
 import styles from "./detail.module.css";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { TParams } from "@/type/props";
+import { TParams } from "@/types/props";
 
 export async function generateMetadata({ params }: TParams) {
   return {
