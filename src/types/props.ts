@@ -1,10 +1,10 @@
-export type TParams = {
+type TParams = {
   params: {
     slug: string;
   };
 };
 
-export type TPostProps = {
+type TPostProps = {
   title: string;
   summary: string;
   image: string;

@@ -1,7 +1,6 @@
 import styles from "./post.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { TPostProps } from "@/types/props";
 
 export default function OnePost({
   title,
