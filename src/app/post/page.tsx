@@ -1,27 +1,17 @@
 import styles from "./post.module.css";
-import Link from "next/link";
-import Image from "next/image";
-import { TPostProps } from "../../type/props";
+import { TPostProps } from "@/types/props";
+import { getAllPosts } from "@/utils/data";
+import OnePost from "./_components/post";
 
-export default function Post({
-  title,
-  summary,
-  image,
-  slug,
-  date,
-}: TPostProps) {
+export default function Post() {
+  const allPosts = getAllPosts();
   return (
     <main className={styles.main}>
-      <Link href={`/post/${slug}`}>
-        <div className={styles.post} key={slug}>
-          <h1>{title}</h1>
-          <div className={styles.imageContainer}>
-            <Image width={360} height={200} src={image} alt="post image" />
-          </div>
-          <h5>{summary}</h5>
-          <h6>{date}</h6>
-        </div>
-      </Link>
+      <div className={styles.container}>
+        {allPosts.map((post: TPostProps) => (
+          <OnePost key={post.slug} {...post} />
+        ))}
+      </div>
     </main>
   );
 }

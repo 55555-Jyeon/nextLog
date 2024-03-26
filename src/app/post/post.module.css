@@ -1,52 +1,20 @@
 .main {
   position: relative;
-  top: 0px;
-  width: 30vw;
-  height: 48vh;
-  background-color: #ffffff8a;
-  border-radius: 1vw;
-  transition: all 0.3s ease-in-out;
-  margin: 2vw 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: visible;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
+  gap: 1vw;
+  padding: 4vw 0;
 }
-.main:hover {
-  top: -20px;
-  background-color: #fff;
-  cursor: pointer;
-}
-.post {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1vw;
-  color: #0f0f0f;
-}
-.post h1 {
-  font-size: 1.8vw;
-  font-weight: 600;
-}
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 28vw;
-  height: 25vh;
-  overflow: hidden;
-  margin: 1vw 0;
-  border-radius: 0.6vw;
-}
-.imageContainer img {
+
+.container {
   width: 100%;
-  height: 100%;
-}
-.post h5 {
-  font-weight: 300;
-  padding: 1vw;
-  word-break: keep-all;
-}
-.post h6 {
-  position: absolute;
-  bottom: 10px;
-  font-weight: 300;
-  color: #c0c0c0;
+  padding: 6vh 3vw 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -1,3 +1,5 @@
+import { TPost } from "@/types/post";
+
 /* sample post */
 export const posts: TPost[] = [
   {

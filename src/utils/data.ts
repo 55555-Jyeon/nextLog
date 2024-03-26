@@ -1,4 +1,4 @@
-import { TPost } from "@/type/post";
+import { TPost } from "@/types/post";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
