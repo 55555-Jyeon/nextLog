@@ -7,7 +7,7 @@ import Footer from "./_components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NextLog",
+  title: "JY's NextLog",
   description: "NextJS A to Z",
 };
 

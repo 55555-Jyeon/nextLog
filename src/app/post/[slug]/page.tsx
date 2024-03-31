@@ -3,9 +3,11 @@ import styles from "./detail.module.css";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-export async function generateMetadata({ params }: TParams) {
+export async function generateMetadata({ params }: TParams): Promise<Metadata> {
+  const post = getPostBySlug(params.slug);
   return {
     title: `post | ${params.slug}`,
+    desc: post.summary,
   };
 }
 

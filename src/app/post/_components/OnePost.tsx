@@ -1,4 +1,4 @@
-import styles from "./post.module.css";
+import styles from "./onePost.module.css";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -1,5 +1,5 @@
-import Post from "./post/page";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <Post />;
+  redirect("/post");
 }

@@ -3,7 +3,10 @@ type TParams = {
     slug: string;
   };
 };
-
+type Metadata = {
+  title: string;
+  desc: string;
+};
 type TPostProps = {
   title: string;
   summary: string;
