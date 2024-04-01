@@ -1,3 +1,4 @@
+import { TPostProps } from "@/types/props";
 import OnePost from "./_components/OnePost";
 import styles from "./post.module.css";
 import { getAllPosts } from "@/utils/data";

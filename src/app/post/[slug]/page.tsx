@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import markdownToHtml from "@/utils/markdownToHtml";
 import Link from "next/link";
+import { Metadata, TParams } from "@/types/props";
 
 export async function generateMetadata({ params }: TParams): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
