@@ -5,4 +5,5 @@ type TPost = {
   image: string;
   summary: string;
   content: string;
+  links: string;
 };
