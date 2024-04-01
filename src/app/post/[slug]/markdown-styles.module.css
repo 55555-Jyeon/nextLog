@@ -4,10 +4,15 @@
   overflow-x: hidden;
 }
 .markdown ul,
-.markdown ol,
+.markdown ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .markdown blockquote {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  font-style: oblique;
+  color: #727272;
 }
 /* titles */
 .markdown h2 {
@@ -26,9 +31,20 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+.markdown h5 {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
 /* content */
 .markdown p {
   font-weight: 300;
   line-height: 150%;
   word-break: keep-all;
+}
+.markdown img {
+  width: 60%;
+  height: fit-content;
+  overflow: hidden;
+  margin: 5% 0 5% 20%;
 }
