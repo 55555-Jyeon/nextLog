@@ -17,6 +17,21 @@ export default function About() {
         <div className={styles.listContainer}>
           <h3>List of Private Toy Projects created by NextJS</h3>
           <ul>
+            <Link href={"https://github.com/55555-Jyeon/random-questions"}>
+              <li>
+                <Image
+                  width={180}
+                  height={100}
+                  src={"/images/randomQuestions.png"}
+                  alt="movie trailer thumbnail"
+                />
+                <h4>06. random interview qustions</h4>
+                <p>
+                  랜덤으로 면접과 관련된 질문을 뽑아 답변할 수 있는 토이
+                  프로젝트
+                </p>
+              </li>
+            </Link>
             <Link href={"https://github.com/55555-Jyeon/mobigram"}>
               <li>
                 <Image
