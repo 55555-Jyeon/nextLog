@@ -1,10 +1,80 @@
 ---
 title: begin NextJS
-data: 2024-03-21
+data: 2024-02-27
 image: "/images/next.svg"
 summary: about NextJS basic
 slug: NextJS
-links: ""
+links: "https://velog.io/@55555-jyeon/whats-nextjs"
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+# 🖼️ NextJS
+
+Next.js는 Vercel 사에서 만든 react기반 프레임워크(framework) 입니다.
+
+초기에 NextJS는 SSR을 위한 리액트 기반 프레임워크로 시작됐으며 현재는 단순 SSR을 위한 프레임워크가 아니라
+
+full-stack Web application을 개발하기 위한 프레임워크라고 정의할 수 있을 정도로 많은 발전을 했습니다.
+
+### full stack frame-work
+
+Next.js는 React 기반의 웹 프레임워크로, 특히 서버 사이드 렌더링(SSR)과 정적 사이트 생성(Static Site Generation, SSG)을 지원하여 풀스택 개발을 용이하게 합니다.
+
+여기서 "풀스택"이라는 용어는 다양한 소프트웨어 계층을 아우르는 개발을 의미합니다.
+
+Next.js가 풀스택 프레임워크로 간주되는 이유는 다음과 같습니다:
+
+<br />
+
+1️⃣ `클라이언트 사이드 코드 (Frontend)`
+NextJS는 React를 기반으로 하며, 클라이언트 사이드에서 사용되는 리액트 컴포넌트를 구축하는 데 특화되어 있습니다.
+
+이는 사용자 인터페이스를 만들고 관리하는 데 매우 효과적입니다.
+
+<br />
+
+2️⃣ `서버 사이드 렌더링 (SSR)`
+Next.js는 서버 사이드 렌더링을 지원하여 서버에서 페이지를 렌더링하고 결과를 클라이언트에 전달할 수 있습니다.
+
+이를 통해 초기 로딩 성능을 개선하고 검색 엔진 최적화(SEO)를 향상시킬 수 있습니다.
+
+<br />
+
+3️⃣ `API 라우팅 및 서버리스 함수`
+Next.js는 API 라우팅을 제공하여 서버리스 함수를 구현할 수 있게 해줍니다.
+
+이를 통해 서버리스 아키텍처를 채택하거나 백엔드 API를 쉽게 구축할 수 있습니다.
+
+<br />
+<br />
+
+##### API Routes?
+
+API Routes는 NextJS 애플리케이션 내에 API를 심어서 배포할 수 있게 해주는 기능입니다.
+
+<br />
+
+FE 코드가 아닌 DB에서 데이터를 가져오거나 쿼리를 날리는 등의 백엔드 코드를 심어서 함께 배포할 수 있습니다.
+
+앞에서 Next.js를 full-stack Web application을 개발하기 위한 프레임워크라고 정의한 이유가 바로 이 부분 때문입니다.
+
+<br />
+
+###### 현재 NextJS 외에 폴더 기반 라우팅을 채택한 풀스택 프레임워크로는 SvelteKit가 있습니다.
+
+<br />
+
+4️⃣ `정적 사이트 생성 (SSG)`
+Next.js는 정적 사이트 생성을 지원하여 사전에 페이지를 빌드하여 정적 파일로 제공할 수 있습니다.
+
+이를 통해 성능을 향상시키고, 캐싱을 통한 더 빠른 로딩을 가능케 합니다.
+
+5️⃣ `data Fetching`
+데이터를 가져오는 다양한 방법을 제공하며, 서버 측에서 또는 클라이언트 측에서 데이터를 처리할 수 있습니다.
+
+<br />
+
+위와 같은 다양한 기능을 기반으로 NextJS는 프론트엔드와 백엔드 개발을 모두 다루며,
+
+클라이언트-서버 구조부터 데이터 처리, 라우팅, 그리고 렌더링에 이르기까지 모든 측면을 다룰 수 있기 때문에 "풀스택 프레임워크"라고 불리고 있습니다.
+
+<br />
